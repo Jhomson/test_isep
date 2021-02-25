@@ -1,0 +1,72 @@
+PS C:\Users\PERSONAL\Documents\Python_ISEP_Jhomson> git init
+Reinitialized existing Git repository in C:/Users/PERSONAL/Documents/Python_ISEP_Jhomson/.git/
+PS C:\Users\PERSONAL\Documents\Python_ISEP_Jhomson> git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .env
+        __pycache__/
+        funciones.py
+        inicio.py
+        objetos.py
+        worker.py
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\PERSONAL\Documents\Python_ISEP_Jhomson> git add .
+PS C:\Users\PERSONAL\Documents\Python_ISEP_Jhomson> git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   .env
+        new file:   __pycache__/funciones.cpython-39.pyc
+        new file:   __pycache__/objetos.cpython-39.pyc
+        new file:   __pycache__/worker.cpython-39.pyc
+        new file:   funciones.py
+        new file:   inicio.py
+        new file:   objetos.py
+        new file:   worker.py
+
+PS C:\Users\PERSONAL\Documents\Python_ISEP_Jhomson> git commit -m "Primer commit"
+[master (root-commit) 76ea50a] Primer commit
+ 8 files changed, 283 insertions(+)
+ create mode 100644 .env
+ create mode 100644 __pycache__/funciones.cpython-39.pyc
+ create mode 100644 __pycache__/objetos.cpython-39.pyc
+ create mode 100644 __pycache__/worker.cpython-39.pyc
+ create mode 100644 funciones.py
+ create mode 100644 inicio.py
+ create mode 100644 objetos.py
+ create mode 100644 worker.py
+PS C:\Users\PERSONAL\Documents\Python_ISEP_Jhomson> git log
+commit 76ea50a195bb6e2318c19e81c221be421db34967 (HEAD -> master)
+Author: Jhomson <jhomson22@gmail.com>
+Date:   Thu Feb 25 04:21:14 2021 -0430
+
+    Primer commit
+PS C:\Users\PERSONAL\Documents\Python_ISEP_Jhomson> git status -s
+PS C:\Users\PERSONAL\Documents\Python_ISEP_Jhomson> git add .
+PS C:\Users\PERSONAL\Documents\Python_ISEP_Jhomson> git commit -m "Segundo commit, esta vez con gitignore"
+[master 8713fe2] Segundo commit, esta vez con gitignore
+ 1 file changed, 1 insertion(+)
+ create mode 100644 .gitignore
+PS C:\Users\PERSONAL\Documents\Python_ISEP_Jhomson> git status -s
+PS C:\Users\PERSONAL\Documents\Python_ISEP_Jhomson> git remote add origin https://github.com/Jhomson/test_isep.git
+PS C:\Users\PERSONAL\Documents\Python_ISEP_Jhomson> git branch -M main
+PS C:\Users\PERSONAL\Documents\Python_ISEP_Jhomson> git push -u origin main
+Enumerating objects: 14, done.
+Counting objects: 100% (14/14), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (13/13), done.
+Writing objects: 100% (14/14), 7.58 KiB | 554.00 KiB/s, done.
+Total 14 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/Jhomson/test_isep.git
+ * [new branch]      main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+PS C:\Users\PERSONAL\Documents\Python_ISEP_Jhomson>
